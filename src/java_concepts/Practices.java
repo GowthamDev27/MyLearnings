@@ -1,6 +1,8 @@
 package java_concepts;
 import java.util.*;
-class Calculator{
+
+// Abstraction
+abstract class Calculator{
 	void addtion(int a,int b) {
 		int sum =a+b;
 		System.out.println(sum);
@@ -10,16 +12,21 @@ class Calculator{
 		System.out.println(sub);
 	}
 }
+class Multiplication extends Calculator{
+	void multiplication() {
+		
+	}
+}
 public class Practices {
     public static void main(String[] args) {
-    	Calculator cl = new Calculator();
-    	Scanner in = new Scanner(System.in);
+    	Scanner scanner = new Scanner(System.in);
+    	Multiplication multiplication=new Multiplication();
     	System.out.println("Enter value1:");
-    	int value1 = in.nextInt();
+    	int value1 = scanner.nextInt();
     	System.out.println("Enter value2:");
-    	int value2 = in.nextInt();
-    	cl.addtion(value1,value2);
-    	cl.substraction(value1, value2);
+    	int value2 = scanner.nextInt();
+    	multiplication.addtion(value1,value2);
+    	multiplication.substraction(value1, value2);
         
     }
 }
