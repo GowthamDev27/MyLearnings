@@ -10,7 +10,7 @@ public class MobileDetails extends MobilesList {
 	
 
 	// Constructor to initialize mobile specs and prices
-	public MobileDetails() {
+	MobileDetails() {
 		// Add specs and prices for mobiles
 		mobileSpecs.put("iphone 12", "A14 Bionic, 6.1-inch Display, Dual-Camera");
 	    mobileSpecs.put("iphone 12 mini", "A14 Bionic, 5.4-inch Display, Dual-Camera");

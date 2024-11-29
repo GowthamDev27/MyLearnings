@@ -5,7 +5,8 @@ interface employees{
 	void employees_department();
 	
 }
-class managers implements employees{
+class managers implements employees
+{
 
 	@Override
 	public void employees_department() {
